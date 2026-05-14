@@ -1,0 +1,33 @@
+2026-05-13 20:15:34 | WARNING  | app.services.cache:<module>:20 - Redis not available, caching disabled: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-05-13 20:15:34 | INFO     | app.main:startup:81 - ============================================================
+2026-05-13 20:15:34 | INFO     | app.main:startup:82 - Student Management System started
+2026-05-13 20:15:34 | INFO     | app.main:startup:83 - Docs available at: http://localhost:8000/docs
+2026-05-13 20:15:34 | INFO     | app.main:startup:84 - ============================================================
+2026-05-13 20:16:02 | INFO     | app.middleware.logging_middleware:dispatch:56 - REQUEST | GET /docs status=200 time=1.01ms client=127.0.0.1
+2026-05-13 20:16:02 | INFO     | app.middleware.logging_middleware:dispatch:56 - REQUEST | GET /openapi.json status=200 time=60.08ms client=127.0.0.1
+2026-05-13 20:16:31 | WARNING  | app.main:validation_error_handler:42 - Validation error on http://127.0.0.1:8000/api/auth/login: [{'field': 'body', 'message': 'Input should be a valid dictionary or object to extract fields from'}]
+2026-05-13 20:16:31 | WARNING  | app.middleware.logging_middleware:dispatch:54 - REQUEST | POST /api/auth/login status=422 time=8.83ms client=127.0.0.1
+2026-05-13 20:17:22 | WARNING  | app.main:validation_error_handler:42 - Validation error on http://127.0.0.1:8000/api/auth/register: [{'field': 'body.password', 'message': 'String should have at least 6 characters'}]
+2026-05-13 20:17:22 | WARNING  | app.middleware.logging_middleware:dispatch:54 - REQUEST | POST /api/auth/register status=422 time=2.12ms client=127.0.0.1
+2026-05-13 20:18:41 | INFO     | app.routes.auth:register:32 - AUTH - New user registered: username=maryam role=admin
+2026-05-13 20:18:41 | INFO     | app.middleware.logging_middleware:dispatch:56 - REQUEST | POST /api/auth/register status=201 time=312.53ms client=127.0.0.1
+2026-05-13 20:20:05 | WARNING  | app.main:validation_error_handler:42 - Validation error on http://127.0.0.1:8000/api/auth/login: [{'field': 'body', 'message': 'Input should be a valid dictionary or object to extract fields from'}]
+2026-05-13 20:20:05 | WARNING  | app.middleware.logging_middleware:dispatch:54 - REQUEST | POST /api/auth/login status=422 time=3.44ms client=127.0.0.1
+2026-05-13 20:21:40 | INFO     | app.main:shutdown:89 - Student Management System shutting down
+2026-05-13 20:21:46 | WARNING  | app.services.cache:<module>:20 - Redis not available, caching disabled: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-05-13 20:21:46 | INFO     | app.main:startup:81 - ============================================================
+2026-05-13 20:21:46 | INFO     | app.main:startup:82 - Student Management System started
+2026-05-13 20:21:46 | INFO     | app.main:startup:83 - Docs available at: http://localhost:8000/docs
+2026-05-13 20:21:46 | INFO     | app.main:startup:84 - ============================================================
+2026-05-13 20:21:46 | INFO     | app.main:shutdown:89 - Student Management System shutting down
+2026-05-13 20:21:51 | WARNING  | app.services.cache:<module>:20 - Redis not available, caching disabled: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-05-13 20:21:51 | INFO     | app.main:startup:81 - ============================================================
+2026-05-13 20:21:51 | INFO     | app.main:startup:82 - Student Management System started
+2026-05-13 20:21:51 | INFO     | app.main:startup:83 - Docs available at: http://localhost:8000/docs
+2026-05-13 20:21:51 | INFO     | app.main:startup:84 - ============================================================
+2026-05-13 20:21:55 | ERROR    | app.middleware.logging_middleware:dispatch:25 - Unhandled exception: 'User' object has no attribute 'password'
+2026-05-13 20:21:55 | CRITICAL | app.main:global_error_handler:54 - Unhandled error on POST http://127.0.0.1:8000/api/auth/login: 'User' object has no attribute 'password'
+2026-05-13 20:21:58 | INFO     | app.middleware.logging_middleware:dispatch:56 - REQUEST | GET /docs status=200 time=1.0ms client=127.0.0.1
+2026-05-13 20:21:58 | INFO     | app.middleware.logging_middleware:dispatch:56 - REQUEST | GET /openapi.json status=200 time=50.12ms client=127.0.0.1
+2026-05-13 20:22:11 | ERROR    | app.middleware.logging_middleware:dispatch:25 - Unhandled exception: 'User' object has no attribute 'password'
+2026-05-13 20:22:11 | CRITICAL | app.main:global_error_handler:54 - Unhandled error on POST http://127.0.0.1:8000/api/auth/login: 'User' object has no attribute 'password'

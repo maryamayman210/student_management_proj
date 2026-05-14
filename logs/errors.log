@@ -1,0 +1,4 @@
+2026-05-13 20:21:55 | ERROR    | app.middleware.logging_middleware:dispatch:25 - Unhandled exception: 'User' object has no attribute 'password'
+2026-05-13 20:21:55 | CRITICAL | app.main:global_error_handler:54 - Unhandled error on POST http://127.0.0.1:8000/api/auth/login: 'User' object has no attribute 'password'
+2026-05-13 20:22:11 | ERROR    | app.middleware.logging_middleware:dispatch:25 - Unhandled exception: 'User' object has no attribute 'password'
+2026-05-13 20:22:11 | CRITICAL | app.main:global_error_handler:54 - Unhandled error on POST http://127.0.0.1:8000/api/auth/login: 'User' object has no attribute 'password'
